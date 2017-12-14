@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class='main'>
+  <view class="list" wx:for="{{list}}" wx:key="item">
+    <view class='title'><text>{{item.categoryInfo.name}}</text></view>
+    <view class='list_box'>
+      <view wx:for="{{item.childs}}" wx:key="ls" wx:for-item="ls" class="item">
+        <button hover-class="active" data-id="{{ls.categoryInfo.ctgId}}" data-name="{{ls.categoryInfo.name}}" bindtap='skip'>{{ls.categoryInfo.name}}</button>
+      </view>
+    </view>
+  </view>
+</view>

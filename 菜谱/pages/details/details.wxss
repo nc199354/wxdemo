@@ -1,0 +1,27 @@
+/* pages/details/details.wxss */
+.main{
+  padding: 0 20rpx;
+  padding-bottom: 40rpx;
+}
+.title text{
+  text-align: center;
+  line-height: 3;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.sumary{
+  text-indent: 2em;
+  font-size: 14px;
+  color:#333;
+}
+.ingredients view{
+  color:#333;
+  text-indent: 2em;
+  font-size: 14px;
+}
+.method_box .item{
+  color:#333;
+  text-indent: 2em;
+  font-size: 14px;
+}

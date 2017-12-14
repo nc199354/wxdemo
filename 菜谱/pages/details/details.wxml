@@ -1,0 +1,23 @@
+<!--pages/details/details.wxml-->
+<view class='main'>
+  <view class='title'><text>{{title}}</text></view>
+  <view class='sumary'>
+    <text>{{sumary}}</text>
+  </view>
+  <view class='img'>
+    <image src='{{img}}' wx:if="{{img}}" mode="widthFix" style='width:100%;'></image>
+  </view>
+  <view class='ingredients' wx:if="{{ingredients}}">
+    <text>食材</text>
+    <view wx:for="{{ingredients}}">
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <view class='method_box'>
+    <view class='method_title'>步骤</view>
+    <view class='item' wx:for="{{method}}">
+      <text>{{item.step}}</text>
+      <image src='{{item.img}}' wx:if="{{item.img}}" mode="widthFix" style='width:100%;'></image>
+    </view>
+  </view>
+</view>

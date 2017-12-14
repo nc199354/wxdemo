@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="load" style="height:{{scrollHeight}}px;">
+  <navigator url='../details/details?id={{item.menuId}}&name={{item.name}}' wx:for="{{list}}">
+    <view class='item'>
+      <image src="{{item.recipe.img}}" lazy-load="true" mode='aspectFill'></image>
+      <view class='name'><text>{{item.name}}</text></view>
+      <view class='cls'>
+        <text wx:for="{{item.ctgTitles}}" wx:for-item="ls">{{ls}}</text>
+      </view>
+    </view>
+  </navigator>
+  <view wx:if="{{list.length<1}}" class="noList">暂无~</view>
+</scroll-view>
+

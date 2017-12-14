@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/details/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f39800",
+    "navigationBarTitleText": "美食之家",
+    "navigationBarTextStyle":"while"
+  }
+}
